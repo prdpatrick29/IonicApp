@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My 2nd Application
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-card>
+   <img (swipe)="presentActionSheet()" src="assets/imgs/got.jpg"/>
+   <ion-card-content>
+     <ion-card-title>The Great Houses in Game Of Thrones</ion-card-title>
+     <p>There are nine Great Houses in Westeros. When the show began, they were Stark, Arryn, Baratheon, Tully, Greyjoy, Lannister, Tyrell, Martell and Targaryen. As of Game of Thrones Season 6, Daenerys is the only surviving Targaryen and remains in exile. House Stark and House Tully have also been displaced, their lands taken away from them, but both Houses survive—at least for now.</p>
+   </ion-card-content>
+
+ </ion-card>
+    
+    <ion-list>
+
+   <ion-item>
+     <ion-label fixed>Full Name</ion-label>
+     <ion-input type="text" [(ngModel)]="name" value=""></ion-input>
+     </ion-item>
+    </ion-list>
+
+
+
+   <button ion-button color=dark icon-right (click)="openModal()">
+     <ion-icon name="planet"> </ion-icon>
+     Submit
+   </button>
+
+    <h4>Below is the list of my Favorite Tv-Series</h4>
+    
+    <ion-list>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/fr.jpg">
+    </ion-thumbnail>
+    <h2>FRIENDS</h2>
+    <p>American Sitecom • 1994 to 2004</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>
+<ion-item>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/bb.jpg">
+    </ion-thumbnail>
+    <h2>Breaking Bad</h2>
+    <p>AMC • 2008 to 2013</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>
+    <ion-item>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/ww.jpg">
+    </ion-thumbnail>
+    <h2>WestWorld</h2>
+    <p> HBO • 2017</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>    
+        <ion-item>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/st.jpg">
+    </ion-thumbnail>
+    <h2>Stranger Things</h2>
+    <p> Netflix • 2017</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>    
+     <ion-item>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/bm.jpg">
+    </ion-thumbnail>
+    <h2>Black Mirror</h2>
+    <p> Netflix • 2012 to 2018</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>    
+        
+    <ion-list radio-group>
+  <ion-list-header>
+    Interests
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>Action</ion-label>
+    <ion-radio checked="true" value="Action"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Drama</ion-label>
+    <ion-radio value="Drama"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Thriller</ion-label>
+    <ion-radio value="Thriller"></ion-radio>
+  </ion-item>
+<ion-item>
+    <ion-label>Horror</ion-label>
+    <ion-radio value="Horror"></ion-radio>
+  </ion-item>
+        
+        
+        
+        </ion-list>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ion-list>
+
+
+
+
+
+
+
+
+
+
+</ion-content>
+
